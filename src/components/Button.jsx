@@ -1,15 +1,9 @@
-const Button = ({name, result, setResult}) => {
- const onClickButton = () => {
-    if (result === "0") {
-        setResult(name);
-    } else {
-        setResult(result + name);
-    }
- };
+const Button = ({name, onClickButton}) => {
     return (
     <button className="bg-gray-200 flex justify-center w-10 h-10 items-center rounded-md" onClick={onClickButton}>
         {name}
-    </button>);
+    </button>
+    );
   };
   
   export default Button;
