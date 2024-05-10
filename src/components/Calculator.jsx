@@ -1,4 +1,4 @@
-import Button from "./Button";
+import ButtonDelete from "./ButtonDelete";
 import ButtonEnter from "./ButtonEnter";
 import ButtonNumber from "./ButtonNumber";
 import ButtonOperator from "./ButtonOperator";
@@ -36,7 +36,7 @@ const Calculator = () => {
                 setTemp={setTemp}
             />
             <ButtonNumber name={"0"} result={result} setResult={setResult}/>
-            <Button name="Del" />
+            <ButtonDelete name="Del" result={result} setResult={setResult}/>
             <ButtonOperator name="/" result={result} setResult={setResult} setTemp={setTemp} setOperator={setOperator}/>
         </div>
         </div>
