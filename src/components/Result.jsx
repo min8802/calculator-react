@@ -1,5 +1,10 @@
+import { useState } from "react";
+
 const Result = () => {
-    return <div className="bg-gray-50 p-2 rounded-md shadow-md">result</div>
+    const [result, setResult] = useState(0);
+
+
+    return <div className="bg-gray-50 p-2 rounded-md shadow-md">{result}</div>
 };
 
 export default Result
